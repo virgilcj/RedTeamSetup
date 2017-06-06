@@ -79,4 +79,33 @@ mkdir mimikatz_JS
 cd mimikatz_JS/
 wget https://gist.githubusercontent.com/subTee/b30e0bcc7645c790fcd993cfd0ad622f/raw/2adcc9d2570b4367c6cc405e5a5969863d04fc9b/katz.js
 
+
+echo "[+][+] Downloading EyeWitness"
+cd ~/Downloads/tools/
+git clone https://github.com/ChrisTruncer/EyeWitness
+cd EyeWitness/setup/
+chmod +x setup.sh
+./setup.sh
+
+echo "[+][+] Downloading Dirs3arch- Web directory bruteforcer"
+cd ~/Downloads/tools/
+git clone https://github.com/maurosoria/dirsearch
+
+echo "[+][+] Downloading CMSmap: CMS web scanner"
+cd ~/Downloads/tools/
+git clone https://github.com/Dionach/CMSmap
+
+
+echo "[+][+] Installing MITMf by @@byt3bl33d3r"
+apt-get -y install python-dev python-setuptools libpcap0.8-dev libnetfilter-queue-dev libssl-dev libjpeg-dev libxml2-dev libxslt1-dev libcapstone3 libcapstone-dev libffi-dev file
+
+pip install virtualenvwrapper
+updatedb
+source $(locate virtualenvwrapper.sh)
+mkvirtualenv MITMf -p /usr/bin/python2.7
+cd ~/Downloads/tools/
+git clone https://github.com/byt3bl33d3r/MITMf
+cd MITMf/ && git submodule init && git submodule update --recursive
+pip install -r requirements.txt
+
 echo "[+][+][+][+]Your Kali Linux is now Ready[+][+][+][+]"
