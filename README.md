@@ -1,4 +1,4 @@
-# basic_updates_tools
+# basic_tools
 
 Whenever I installed Kali Linux I had to make changes to sources file and update it and search and download few tools which are not a part of Kali repo. I was just tired of doing all these over and over again so I made it in a bash script.
 
@@ -12,7 +12,7 @@ Installs tools like CrackMapExec, Empire, Sublist3r, BruteSpray, psychoPATH, BEW
 
 This is just a run and install script. Feel free to modify and add new good and essential tools to the script.
 
-# Shoutouts
+## Shoutouts
 @mishradhiraj_
 
 ## Todo
