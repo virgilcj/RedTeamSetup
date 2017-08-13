@@ -33,6 +33,8 @@ apt-get -y install wine
 apt-get -y install wine-bin
 apt-get -y install mingw32
 msfupdate
+#Incase installing in virtual box uncomment the below line, once this is finished run the VBoxLinuxAdditions.run
+#apt-get install linux-headers-$(uname -r)
 cd ~/Downloads/
 mkdir tools
 cd tools/
